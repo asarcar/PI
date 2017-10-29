@@ -1,0 +1,37 @@
+* INTRODUCTION:
+PieKul is a sales enablement/acceleration software product delivered as a service.
+
+It's product, PI (read as product information) has three main engine components:
+
+** Rendering Engine:
+Presents relevant sections of product information an
+engaging and conversational manner for users in short, snackable, and
+appropriate multimedia format.
+
+** Content Engine:
+Automatically gathers and/or generates narrowly scoped
+content from a corpus of text documents and multimedia files. These contents
+are tagged and organized to then serve the rendering engine as product information
+is presented to the user.
+
+** Analytics Engine:
+Gathers information about the product usage queries,
+user preferences, etc. from the product information navigation pattern of
+the user. This data is tagged, summarized, and organized that is then
+presented to businesses in an engaging manner.
+
+This repository addresses the rendering engine part of PI.
+
+* EXECUTION WORKFLOW
+** Setup Software Installs & Environment:
+- cd path_to_main directory 
+- bash> export PITOP=`pwd` && export PYTHONPATH=$PYTHONPATH:$PITOP/.python
+- bash> $PITOP/tools/setup-ubuntu-dev.sh # or sudo setup-centos-dev.sh
+- bash> sudo apt-get update -y
+** Set PI Agent:
+- Import PI agent into api.ai: $PITOP/installer/config/apiai/PieKul.zip.
+** Run FB Messenger Bot:
+- bash> $PITOP/bot/bin/bot.
+
+* DIRECTORY ORGANIZATION
+- main: Source code.
